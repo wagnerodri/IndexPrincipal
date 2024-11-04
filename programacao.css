@@ -1,0 +1,60 @@
+.banners_atividades img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.banners_atividades h4 {
+    margin-top: 5px; /* Espaço acima do título reduzido */
+}
+
+.banners_atividades p {
+    margin-top: 5px; /* Espaço acima do parágrafo mantido */
+}
+
+.separator {
+    background-color: rgba(135, 65, 114, 0.7); /* Cor do separador */
+    width: 2px; /* Largura do separador */
+    height: 200px; /* Altura do separador */
+    margin: 0 5px; /* Margem horizontal para espaçamento */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra do separador */
+}
+
+.rounded-image {
+    border-radius: 20px; /* Mantém o arredondamento */
+    overflow: hidden; /* Garante que a parte da imagem que ultrapassa o limite seja cortada */
+}
+
+/* Ajustes para os paddings das colunas */
+.col-lg-5 {
+    padding-right: 5px; /* Reduzir o padding direito para aproximar a imagem do separador */
+}
+
+.col-lg-6 {
+    padding-left: 5px; /* Reduzir o padding esquerdo para aproximar o texto do separador */
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .banners_atividades {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .separator {
+        width: 100%; /* Faz a barra ocupar a largura total em telas menores */
+        height: 2px; /* Altura da barra em horizontal */
+        margin: 10px 0; /* Margem em cima e embaixo para espaçamento */
+    }
+
+    .col-lg-5, .col-lg-6 {
+        text-align: center; /* Centraliza o texto em telas menores */
+        padding: 0; /* Remove padding para melhor alinhamento */
+    }
+
+    .banners_atividades img {
+        width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+
